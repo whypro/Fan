@@ -19,6 +19,9 @@ Controller，根据用户触发的时间更新Model。 (FanController.java)
 4. FanMain: 
 程序入口。 (FanMain.java)
 
+## 三、界面设计与事件处理
+GUI设计部分很简单，两个JPanel分别充当了画板和控制面板，使用了BorderLayout的布局方式，画板位于CENTER，控制面板位于SOUTH。控制面板中有两个按钮和一个滑块，分别控制风扇的开关和旋转地速度。
+
 ## 四、体会与总结
 1. 在实现过程中，发现控制速度有两种方式，一是增加run()方法中扇叶位置的增加量，二是减少run()方法中sleep()的时间。本程序使用这种方式，即：定义变量FPS(frames per second)，粗略的表示每秒刷新的次数，FPS随speed(revolutions per second)的增加而增加，满足表达式FPS = speed * 360.，这样保证了风扇平滑的旋转。
 2. 因为时间仓促，GUI设计的还不够完美。使用者不能交互式地设置扇叶数、扇叶大小、旋转方向、扇叶颜色等（而这些在当初设计FanModel类时都已定义和实现）。
