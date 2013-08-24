@@ -10,11 +10,11 @@
 本程序使用了MVC和观察者模式。    
 主要类有四个：   
 1. FanModel: 
-Model，抽象了风扇的功能，封装了风扇的状态。继承了Observable类，当对象发生改变时通知其他观察者。(FanModel.java)
+Model，抽象了风扇的功能，封装了风扇的状态。继承了Observable类，当对象发生改变时通知其他观察者。(FanModel.java)  
 2. FanView: 
-View，观察者，将模型的改变显示在窗口上，维护与Model的一致性。实现了Observable接口。 (FanView.java)
+View，观察者，将模型的改变显示在窗口上，维护与Model的一致性。实现了Observable接口。 (FanView.java)  
 3. FanController:
-Controller，根据用户触发的时间更新Model。 (FanController.java)
+Controller，根据用户触发的时间更新Model。 (FanController.java)  
 4. FanMain: 
 程序入口。 (FanMain.java)
 
